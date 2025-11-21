@@ -59,7 +59,7 @@ const teamMembers = [
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-[#1e3a5f]/60 via-[#2563eb]/40 to-[#06b6d4]/60">
+    <section id="about" className="py-20 bg-gradient-to-br from-primary-800/60 via-primary/40 to-primary-300/60">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -100,7 +100,7 @@ export default function About() {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="bg-gradient-to-br from-[#1e3a5f]/80 to-[#2563eb]/60 p-6 rounded-2xl border border-cyan-400/20 hover:border-cyan-400/40 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/20 transform hover:-translate-y-2"
+              className="bg-gradient-to-br from-primary-800/80 to-primary/60 p-6 rounded-2xl border border-primary-300/20 hover:border-primary-300/40 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-500/20 transform hover:-translate-y-2"
             >
               <div className="text-center">
                 <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-cyan-400/30">
