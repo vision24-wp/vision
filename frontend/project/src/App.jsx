@@ -17,31 +17,31 @@ function App() {
 
   return (
     <Router>
-      <div className="min-h-screen bg-gradient-to-br from-[#1e3a5f] via-[#2563eb] to-[#06b6d4] relative overflow-hidden">
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-indigo-900 to-slate-900 relative overflow-hidden">
       {/* Geometric Background Shapes */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         {/* Large Sphere - Bottom Right */}
-        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-cyan-400/30 to-blue-500/20 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-primary-300/30 to-primary/20 rounded-full blur-3xl animate-float"></div>
         
         {/* Medium Sphere - Center Right */}
-        <div className="absolute top-1/2 right-1/4 w-80 h-80 bg-gradient-to-br from-blue-400/25 to-cyan-300/15 rounded-full blur-2xl animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/2 right-1/4 w-80 h-80 bg-gradient-to-br from-primary-300/25 to-primary-100/15 rounded-full blur-2xl animate-float" style={{ animationDelay: '2s' }}></div>
         
         {/* Small Sphere - Top Left */}
-        <div className="absolute top-20 left-20 w-60 h-60 bg-gradient-to-br from-blue-500/20 to-cyan-400/10 rounded-full blur-xl animate-float" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute top-20 left-20 w-60 h-60 bg-gradient-to-br from-primary/20 to-primary-300/10 rounded-full blur-xl animate-float" style={{ animationDelay: '4s' }}></div>
         
         {/* Additional Medium Sphere - Center */}
-        <div className="absolute top-1/3 left-1/3 w-72 h-72 bg-gradient-to-br from-cyan-300/20 to-blue-400/10 rounded-full blur-2xl animate-float" style={{ animationDelay: '1.5s' }}></div>
+        <div className="absolute top-1/3 left-1/3 w-72 h-72 bg-gradient-to-br from-primary-100/20 to-primary-300/10 rounded-full blur-2xl animate-float" style={{ animationDelay: '1.5s' }}></div>
         
         {/* Large 3D Triangle - Center Right */}
-        <div className="absolute top-1/3 right-1/3 w-0 h-0 border-l-[120px] border-l-transparent border-r-[120px] border-r-transparent border-b-[208px] border-b-cyan-400/20 animate-rotate"></div>
+        <div className="absolute top-1/3 right-1/3 w-0 h-0 border-l-[120px] border-l-transparent border-r-[120px] border-r-transparent border-b-[208px] border-b-primary-300/20 animate-rotate"></div>
         
         {/* Medium 3D Triangle */}
-        <div className="absolute top-1/2 right-1/5 w-0 h-0 border-l-[80px] border-l-transparent border-r-[80px] border-r-transparent border-b-[139px] border-b-blue-400/15 animate-rotate" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-1/2 right-1/5 w-0 h-0 border-l-[80px] border-l-transparent border-r-[80px] border-r-transparent border-b-[139px] border-b-primary-300/15 animate-rotate" style={{ animationDelay: '1s' }}></div>
         
         {/* Small Triangles */}
-        <div className="absolute top-1/4 right-1/4 w-0 h-0 border-l-[50px] border-l-transparent border-r-[50px] border-r-transparent border-b-[87px] border-b-cyan-300/15 animate-float" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute bottom-1/4 left-1/4 w-0 h-0 border-l-[70px] border-l-transparent border-r-[70px] border-r-transparent border-b-[121px] border-b-blue-500/18 animate-float" style={{ animationDelay: '3s' }}></div>
-        <div className="absolute top-2/3 left-1/2 w-0 h-0 border-l-[45px] border-l-transparent border-r-[45px] border-r-transparent border-b-[78px] border-b-cyan-400/12 animate-float" style={{ animationDelay: '2.5s' }}></div>
+        <div className="absolute top-1/4 right-1/4 w-0 h-0 border-l-[50px] border-l-transparent border-r-[50px] border-r-transparent border-b-[87px] border-b-primary-100/15 animate-float" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-1/4 left-1/4 w-0 h-0 border-l-[70px] border-l-transparent border-r-[70px] border-r-transparent border-b-[121px] border-b-primary/18 animate-float" style={{ animationDelay: '3s' }}></div>
+        <div className="absolute top-2/3 left-1/2 w-0 h-0 border-l-[45px] border-l-transparent border-r-[45px] border-r-transparent border-b-[78px] border-b-primary-300/12 animate-float" style={{ animationDelay: '2.5s' }}></div>
         
         {/* Abstract Lines and Curves */}
         <svg className="absolute inset-0 w-full h-full opacity-30" xmlns="http://www.w3.org/2000/svg">
@@ -57,28 +57,28 @@ function App() {
         
         {/* Bar Chart / Equalizer Elements - Top Right */}
         <div className="absolute top-10 right-10 flex gap-2 items-end h-24">
-          <div className="w-3 bg-cyan-400/30 h-14 animate-float"></div>
-          <div className="w-3 bg-blue-400/35 h-18 animate-float" style={{ animationDelay: '0.5s' }}></div>
-          <div className="w-3 bg-cyan-400/30 h-12 animate-float" style={{ animationDelay: '1s' }}></div>
-          <div className="w-3 bg-blue-400/35 h-16 animate-float" style={{ animationDelay: '1.5s' }}></div>
-          <div className="w-3 bg-cyan-400/30 h-10 animate-float" style={{ animationDelay: '2s' }}></div>
-          <div className="w-3 bg-blue-400/35 h-14 animate-float" style={{ animationDelay: '2.5s' }}></div>
+          <div className="w-3 bg-primary-300/30 h-14 animate-float"></div>
+          <div className="w-3 bg-primary-300/35 h-18 animate-float" style={{ animationDelay: '0.5s' }}></div>
+          <div className="w-3 bg-primary-300/30 h-12 animate-float" style={{ animationDelay: '1s' }}></div>
+          <div className="w-3 bg-primary-300/35 h-16 animate-float" style={{ animationDelay: '1.5s' }}></div>
+          <div className="w-3 bg-primary-300/30 h-10 animate-float" style={{ animationDelay: '2s' }}></div>
+          <div className="w-3 bg-primary-300/35 h-14 animate-float" style={{ animationDelay: '2.5s' }}></div>
         </div>
         
         {/* Bar Chart / Equalizer Elements - Bottom Left */}
         <div className="absolute bottom-20 left-10 flex gap-2 items-end h-20">
-          <div className="w-2.5 bg-cyan-300/25 h-8 animate-float"></div>
-          <div className="w-2.5 bg-blue-300/30 h-12 animate-float" style={{ animationDelay: '0.3s' }}></div>
-          <div className="w-2.5 bg-cyan-300/25 h-10 animate-float" style={{ animationDelay: '0.6s' }}></div>
-          <div className="w-2.5 bg-blue-300/30 h-14 animate-float" style={{ animationDelay: '0.9s' }}></div>
-          <div className="w-2.5 bg-cyan-300/25 h-6 animate-float" style={{ animationDelay: '1.2s' }}></div>
+          <div className="w-2.5 bg-primary-100/25 h-8 animate-float"></div>
+          <div className="w-2.5 bg-primary-100/30 h-12 animate-float" style={{ animationDelay: '0.3s' }}></div>
+          <div className="w-2.5 bg-primary-100/25 h-10 animate-float" style={{ animationDelay: '0.6s' }}></div>
+          <div className="w-2.5 bg-primary-100/30 h-14 animate-float" style={{ animationDelay: '0.9s' }}></div>
+          <div className="w-2.5 bg-primary-100/25 h-6 animate-float" style={{ animationDelay: '1.2s' }}></div>
         </div>
         
         {/* Dotted Patterns - Top Right */}
         <div className="absolute top-1/4 right-1/5 w-40 h-40 opacity-15">
           <div className="grid grid-cols-5 gap-2">
             {Array.from({ length: 25 }).map((_, i) => (
-              <div key={i} className="w-2 h-2 bg-cyan-300 rounded-full animate-float" style={{ animationDelay: `${i * 0.08}s` }}></div>
+              <div key={i} className="w-2 h-2 bg-primary-100 rounded-full animate-float" style={{ animationDelay: `${i * 0.08}s` }}></div>
             ))}
           </div>
         </div>

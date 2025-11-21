@@ -25,7 +25,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className="py-20 bg-gradient-to-br from-[#1e3a5f]/60 via-[#2563eb]/40 to-[#06b6d4]/60">
+    <section id="features" className="py-20 bg-gradient-to-br from-primary-800/60 via-primary/40 to-primary-300/60">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -40,16 +40,16 @@ export default function Features() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group bg-gradient-to-br from-[#0d1d3a] to-[#0a1628] p-8 rounded-2xl border border-blue-900/30 hover:border-blue-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-blue-500/10 transform hover:-translate-y-2"
+              className="group bg-gradient-to-br from-primary-800/60 to-primary-900/80 p-8 rounded-2xl border border-primary-900/30 hover:border-primary-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-500/10 transform hover:-translate-y-2"
             >
               <div className="flex items-start space-x-4">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <feature.icon className="w-8 h-8 text-white" />
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-indigo-300 transition-colors">
                     {feature.title}
                   </h3>
                   <p className="text-gray-300 leading-relaxed">
